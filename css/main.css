@@ -28,3 +28,11 @@ a.one:hover{
     height: 90.4%;
     border: 1px solid #ddd;
 }
+@media (max-width: 400px){
+    .title{
+        width: 99.4%;
+    }
+    .border{
+        width: 99.4%;
+    }
+}
