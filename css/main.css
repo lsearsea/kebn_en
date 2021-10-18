@@ -40,3 +40,6 @@ a:hover{
 body.mdui-loaded .mdui-drawer::-webkit-scrollbar{
     width: 0;
 }
+body::-webkit-scrollbar{
+    width: 0;
+}
