@@ -30,6 +30,9 @@ a:hover{
     width: 270px;
     max-width: none;
     }
+    .mdui-drawer-body-left {
+        padding-left: 0px;
+    }
 }
 .mdui-list-item {
     padding: 0px 24px;
