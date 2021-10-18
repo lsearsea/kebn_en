@@ -27,11 +27,17 @@ a:hover{
 }
 @media (min-width: 1024px){
     .mdui-drawer {
-    width: 270px;
-    max-width: none;
+        width: 270px;
+        max-width: none;
     }
     .mdui-drawer-body-left {
         padding-left: 0px;
+    }
+    .mdui-drawer-close {
+        transform: translateX(-270px);
+    }
+    .mdui-appbar-with-toolbar .mdui-drawer {
+        top: 63px;
     }
 }
 .mdui-list-item {
