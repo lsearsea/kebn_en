@@ -1,33 +1,110 @@
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<meta http-equiv="refresh" content="3;url='/';">
-		<title>
-			网站跳转中,请稍候...
-		</title>
-		<style type="text/css">
-			html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
-			{margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align:
-			baseline}body {background: #fff;}#loader-container {width: 188px;height:
-			188px;color: white;margin: 0 auto;position: absolute;top: 50%;left: 50%;margin-right:
-			-50%;transform: translate(-50%, -50%);border: 5px solid #2196f3;border-radius:
-			50%;-webkit-animation: borderScale 1s infinite ease-in-out;animation: borderScale
-			1s infinite ease-in-out;}#loadingText {font-family: 'Raleway', sans-serif;font-size:
-			1.4em;position: absolute;top: 50%;left: 50%;margin-right: -50%;transform:
-			translate(-50%, -50%);color:#2196f3}@-webkit-keyframes borderScale {0% {border: 5px
-			solid white;}50% {border: 25px solid #2196f3;}100% {border: 5px solid white;}}@keyframes
-			borderScale {0% {border: 5px solid white;}50% {border: 25px solid #2196f3;}100%
-			{border: 5px solid white;}}
-		</style>
-	</head>
-	<body>
-		<div id="loader-container">
-			<p id="loadingText">
-				网站跳转中...
-			</p>
-		</div>
-	</body>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+	<meta http-equiv="refresh" content=";url='/';">
+    <title>页面未找到，正在跳转至首页，请稍候...-课本网</title>
+</head>
+<style type="text/css">
+	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+	{margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align:
+	baseline}body {background: #fff;}#loader-container {width: 188px;height:
+	188px;color: white;margin: 0 auto;position: absolute;top: 55.5%;left: 50%;margin-right:
+	-50%;transform: translate(-50%, -50%);border: 5px solid #2196f3;border-radius:
+	50%;-webkit-animation: borderScale 1s infinite ease-in-out;animation: borderScale
+	1s infinite ease-in-out;}#loadingText {font-family: 'Raleway', sans-serif;font-size:
+	1.4em;position: absolute;top: 50%;left: 50%;margin-right: -50%;transform:
+	translate(-50%, -50%);color:#2196f3}@-webkit-keyframes borderScale {0% {border: 5px
+	solid white;}50% {border: 25px solid #2196f3;}100% {border: 5px solid white;}}@keyframes
+	borderScale {0% {border: 5px solid white;}50% {border: 25px solid #2196f3;}100%
+	{border: 5px solid white;}}
+</style>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-auto">
+    <header class="mdui-appbar mdui-appbar-fixed mdui-color-white">
+      <div class="mdui-toolbar">
+        <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}"><i class="mdui-icon material-icons">menu</i></span>
+        <div class="mdui-toolbar-spacer"></div>
+        <a href="https://kebn.net/" class="mdui-typo-title">课本网</a>
+      </div>
+    </header>
+    <div class="mdui-drawer mdui-drawer-close mdui-color-white" id="main-drawer">
+        <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+            <div class="mdui-collapse-item ">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-content">主页</div>
+                    <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                </div>
+                <div class="mdui-collapse-item-body mdui-list">
+                    <a href="./jj" class="mdui-list-item mdui-ripple ">简介</a>
+                    <a href="./sm" class="mdui-list-item mdui-ripple ">声明</a>
+                </div>
+            </div>
+            <div class="mdui-collapse-item ">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-content">科目</div>
+                    <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                </div>
+                <div class="mdui-collapse-item-body mdui-list">
+                    <a href="./ttbk/yw" class="mdui-list-item mdui-ripple ">语文</a>
+                    <a href="./ttbk/sx" class="mdui-list-item mdui-ripple ">数学</a>
+                    <a href="./ttbk/yy" class="mdui-list-item mdui-ripple ">英语</a>
+                    <a href="./ttbk/hx" class="mdui-list-item mdui-ripple ">化学</a>
+                    <a href="./ttbk/wl" class="mdui-list-item mdui-ripple ">物理</a>
+                    <a href="./ttbk/sw" class="mdui-list-item mdui-ripple ">生物</a>
+                    <a href="./ttbk/zz" class="mdui-list-item mdui-ripple ">政治</a>
+                    <a href="./ttbk/ls" class="mdui-list-item mdui-ripple ">历史</a>
+                    <a href="./ttbk/dl" class="mdui-list-item mdui-ripple ">地理</a>
+                </div>
+            </div>
+            <div class="mdui-collapse-item ">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-content">版本</div>
+                    <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                </div>
+                <div class="mdui-collapse-item-body mdui-list">
+                    <a href="./ttbk/rj" class="mdui-list-item mdui-ripple ">人教版</a>
+                    <a href="./ttbk/sj" class="mdui-list-item mdui-ripple ">苏教版</a>
+                    <a href="./ttbk/xj" class="mdui-list-item mdui-ripple ">湘教版</a>
+                    <a href="./ttbk/zj" class="mdui-list-item mdui-ripple ">浙教版</a>
+                    <a href="./ttbk/xq" class="mdui-list-item mdui-ripple ">星球版</a>
+                </div>
+            </div>
+            <div class="mdui-collapse-item ">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-content">年级</div>
+                    <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                </div>
+                <div class="mdui-collapse-item-body mdui-list">
+                    <a href="./ttbk/xy" class="mdui-list-item mdui-ripple ">小学一年级</a>
+                    <a href="./ttbk/xe" class="mdui-list-item mdui-ripple ">小学二年级</a>
+                    <a href="./ttbk/xs" class="mdui-list-item mdui-ripple ">小学三年级</a>
+                    <a href="./ttbk/xsj" class="mdui-list-item mdui-ripple ">小学四年级</a>
+                    <a href="./ttbk/xw" class="mdui-list-item mdui-ripple ">小学五年级</a>
+                    <a href="./ttbk/xl" class="mdui-list-item mdui-ripple ">小学六年级</a>
+                    <a href="./ttbk/cy" class="mdui-list-item mdui-ripple ">初中一年级</a>
+                    <a href="./ttbk/ce" class="mdui-list-item mdui-ripple ">初中二年级</a>
+                    <a href="./ttbk/cs" class="mdui-list-item mdui-ripple ">初中三年级</a>
+                    <a href="./ttbk/gy" class="mdui-list-item mdui-ripple ">高中一年级</a>
+                    <a href="./ttbk/ge" class="mdui-list-item mdui-ripple ">高中二年级</a>
+                    <a href="./ttbk/gs" class="mdui-list-item mdui-ripple ">高中三年级</a>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="loader-container">
+		<p id="loadingText">
+			网站跳转中...
+		</p>
+	</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"></script>    
+</body>
 </html>
