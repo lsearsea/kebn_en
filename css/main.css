@@ -15,10 +15,10 @@ a:hover{
     color: #ff4081;
 }
 @media (min-width: 600px){
-.mdui-appbar .mdui-toolbar {
-    height: 55px;
-    line-height: 55px;
-    }
+    .mdui-appbar .mdui-toolbar {
+        height: 55px;
+        line-height: 55px;
+        }
     .mdui-toolbar>.mdui-btn-icon {
         position: relative;
         left: 30px;
@@ -43,8 +43,11 @@ a:hover{
         top: 63px;
     }
     #image,#images{
-        padding: 0;
-        width: 75%;
+        width: 56.45%;
+    }
+    image,#images{
+        -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 5px 8px 0 rgba(0,0,0,.14),0 1px 14px 0 rgba(0,0,0,.12)!important;
+        box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 5px 8px 0 rgba(0,0,0,.14),0 1px 14px 0 rgba(0,0,0,.12)!important;
     }
 }
 .mdui-list-item {
