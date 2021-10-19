@@ -8,6 +8,7 @@
     <link rel="icon" href="/favicon.ico"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/viewer.min.css">
     <title>目录-地理-课本网</title>
 </head>
 <body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-auto">
@@ -82,11 +83,25 @@
             </div>
         </div>
     </div>
+    <div class="mdui-fab-wrapper" mdui-fab="{trigger: 'hover'}">
+        <button class="mdui-fab mdui-ripple">
+          <i class="mdui-icon material-icons">swap_horiz</i>
+          <i class="mdui-icon mdui-fab-opened material-icons">compare_arrows</i>
+        </button>
+        <div class="mdui-fab-dial">
+          <button class="mdui-fab mdui-fab-mini mdui-ripple" title="上接"><a href="/ttbk/dl"><i class="mdui-icon material-icons">arrow_back</i></a></button>
+          <button class="mdui-fab mdui-fab-mini mdui-ripple" title="下接"><a href="/ttbk/dl/sc/first/index.html"><i class="mdui-icon material-icons">arrow_forward</i></a></button>
+        </div>
+    </div>
     <div>
-        <img class="mdui-img-fluid" id="image" src="https://holzora.gitee.io/dl/sc/ml/ml.png" alt="目录">
+        <img class="mdui-img-fluid mdui-center" id="image" src="https://holzora.gitee.io/dl/sc/ml/ml.png" alt="目录">
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/viewer.min.js"></script>
+    <script>
+        var viewer = new Viewer(document.getElementById('image'));
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"></script>    
 </body>
 </html>

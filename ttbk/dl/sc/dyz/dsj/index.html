@@ -8,6 +8,7 @@
     <link rel="icon" href="/favicon.ico"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/viewer.min.css">
     <title>第三节-第一章-地理-课本网</title>
 </head>
 <body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-auto">
@@ -82,15 +83,31 @@
             </div>
         </div>
     </div>
+    <div class="mdui-fab-wrapper" mdui-fab="{trigger: 'hover'}">
+        <button class="mdui-fab mdui-ripple">
+          <i class="mdui-icon material-icons">swap_horiz</i>
+          <i class="mdui-icon mdui-fab-opened material-icons">compare_arrows</i>
+        </button>
+        <div class="mdui-fab-dial">
+          <button class="mdui-fab mdui-fab-mini mdui-ripple" title="上接"><a href="/ttbk/dl/sc/dyz/dej/index.html"><i class="mdui-icon material-icons">arrow_back</i></a></button>
+          <button class="mdui-fab mdui-fab-mini mdui-ripple" title="下接"><a href="/ttbk/dl/sc/dyz/dsij/index.html"><i class="mdui-icon material-icons">arrow_forward</i></a></button>
+        </div>
+    </div>
     <div>
-        <img class="mdui-img-fluid" src="https://holzora.gitee.io/dl/sc/dyz/dsj/11.png" alt="第11页">
-        <img class="mdui-img-fluid" src="https://holzora.gitee.io/dl/sc/dyz/dsj/12.png" alt="第12页">
-        <img class="mdui-img-fluid" src="https://holzora.gitee.io/dl/sc/dyz/dsj/13.png" alt="第13页">
-        <img class="mdui-img-fluid" src="https://holzora.gitee.io/dl/sc/dyz/dsj/14.png" alt="第14页">
-        <img class="mdui-img-fluid" src="https://holzora.gitee.io/dl/sc/dyz/dsj/15.png" alt="第15页">
+        <ul id="images" class="mdui-center">
+            <li><img class="mdui-img-fluid" src="https://holzora.gitee.io/dl/sc/dyz/dsj/11.png" alt="第11页"></li>
+            <li><img class="mdui-img-fluid" src="https://holzora.gitee.io/dl/sc/dyz/dsj/12.png" alt="第12页"></li>
+            <li><img class="mdui-img-fluid" src="https://holzora.gitee.io/dl/sc/dyz/dsj/13.png" alt="第13页"></li>
+            <li><img class="mdui-img-fluid" src="https://holzora.gitee.io/dl/sc/dyz/dsj/14.png" alt="第14页"></li>
+            <li><img class="mdui-img-fluid" src="https://holzora.gitee.io/dl/sc/dyz/dsj/15.png" alt="第15页"></li>
+        </ul>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/viewer.min.js"></script>
+    <script>
+        var viewer = new Viewer(document.getElementById('images'));
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"></script>    
 </body>
 </html>

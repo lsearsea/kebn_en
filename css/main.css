@@ -1,6 +1,9 @@
 *{
     list-style: none;
 }
+#image,#images{
+    padding: 0;
+}
 a:link{
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -38,6 +41,10 @@ a:hover{
     }
     .mdui-appbar-with-toolbar .mdui-drawer {
         top: 63px;
+    }
+    #image,#images{
+        padding: 0;
+        width: 75%;
     }
 }
 .mdui-list-item {
